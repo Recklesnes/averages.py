@@ -1,0 +1,19 @@
+count = 0
+sum = 0
+#run this loop until broken#
+while True:
+    i = input("Please insert number: ")
+    if i == "q":
+        break
+#checks for break before running this block#
+    w = int(i)
+    sum = sum + w
+    count = count + 1
+average = sum / count
+#printing the final lines#
+message = (
+f"The sum of numbers entered is {sum}. \n"
+f"The count of the numbers entereted is {count}. \n"
+f"The average of the numbers entered is {average}. \n"
+)
+print(message)
